@@ -1,6 +1,4 @@
 # Terminal and stuff
-brew "git"
-brew "zsh"
 brew "zsh"
 brew "nvm"
 
