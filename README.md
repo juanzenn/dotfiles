@@ -70,7 +70,21 @@ export NVM_DIR="$HOME/.nvm"
 nvm install --lts
 ```
 
-8. Finalize and verify
+8. Create and test connection with repositories
+
+```bash
+ssh-keygen -t rsa -b 4096 -C "PERSONAL_EMAIL" -f ~/.ssh/github
+ssh-keygen -t rsa -b 4096 -C "WORK_EMAIL" -f ~/.ssh/atrinium
+
+cat ~/.ssh/github.pub
+cat ~/.ssh/atrinium.pub
+
+# After adding the keys to providers
+ssh -T git@github.com-personal
+ssh -T bitbucket.org-atrinium
+```
+
+9. Finalize and verify
 
 ```bash
 # Reload shell config
