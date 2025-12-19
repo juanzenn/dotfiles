@@ -83,10 +83,7 @@ source ~/znap-repos/znap/znap.zsh
 source $ZSH/oh-my-zsh.sh
 
 # Highlighting
-source /home/juan/znap-repos/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
-
-# NVM
-source /usr/share/nvm/init-nvm.sh
+source /home/darkzen/znap-repos/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 
 # User configuration
 
@@ -104,9 +101,9 @@ alias zshconfig="code ~/.zshrc"
 alias ohmyzsh="code ~/.oh-my-zsh"
 alias restart="source ~/.zshrc"
 
-export FLYCTL_INSTALL="/home/juan/.fly"
+export FLYCTL_INSTALL="/home/darkzen/.fly"
 export PATH="$FLYCTL_INSTALL/bin:$PATH"
 
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
-[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completionsource /home/darkzen/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh

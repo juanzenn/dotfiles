@@ -1,13 +1,15 @@
+[maintenance]
+	repo = /home/darkzen/znap-repos/znap
 [user]
 	name = Juan Alvarez
-	email = juanandres140299@gmail.com
-
+	email = 31358977+juanzenn@users.noreply.github.com
 [alias]
         co = checkout
         br = branch
         ci = commit
         st = status
 	l = log --graph --abbrev-commit --decorate --format=format:'%C(bold blue)%h%C(reset) - %C(bold green)(%ar)%C(reset) %C(white)%s%C(reset) %C(dim white)- %an%C(reset)%C(auto)%d%C(reset)'
+	acp = "!f() { git add . && git commit -m \"$1\" && git push; }; f"
 [pull]
 	rebase = true
 [push]
