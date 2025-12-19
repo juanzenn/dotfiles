@@ -9,7 +9,7 @@ Prerequisites
 
 ## Initial steps
 
-1. Update system and install basic tools
+1. Update system and install basic tools. Set ZSH as default, log-in and log-out
 
 ```bash
 sudo apt update && sudo apt upgrade -y
@@ -19,7 +19,6 @@ sudo apt install -y build-essential curl file git zsh
 2. Clone this repo to your home (if not already present)
 
 ```bash
-# run as your user; adjust URL if needed
 git clone https://github.com/juanzenn/dotfiles.git /home/darkzen/.dotfiles
 cd /home/darkzen/.dotfiles
 ```
@@ -64,7 +63,7 @@ mkdir -p /home/darkzen/znap-repos
 
 ```bash
 # If you want nvm installed (the .zshrc expects nvm installed at ~/.nvm)
-curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.5/install.sh | bash
+curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.40.3/install.sh | bash
 # Then open a new shell or source nvm script:
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"
@@ -78,7 +77,6 @@ nvm install --lts
 source restart
 
 # Verify brew and packages
-brew --version
 git --version
 zsh --version
 tmux -V
