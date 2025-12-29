@@ -36,6 +36,7 @@ done
 ln -sfn /home/darkzen/.dotfiles/.zshrc /home/darkzen/.zshrc
 ln -sfn /home/darkzen/.dotfiles/.gitconfig /home/darkzen/.gitconfig
 ln -sfn /home/darkzen/.dotfiles/.tmux.conf /home/darkzen/.tmux.conf
+ln -sfn /home/darkzen/.dotfiles/.ssh/config /home/darkzen/.ssh/config
 ```
 
 4. Install oh-my-zsh (without overwriting your .zshrc)
